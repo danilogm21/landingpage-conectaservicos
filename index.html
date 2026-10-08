@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConectaServiços</title>
+  <meta name="description" content="Encontre eletricistas, encanadores e técnicos verificados na sua região, compare avaliações reais e agende em minutos. Cadastre seu e-mail e seja avisado do lançamento.">
+  <meta name="theme-color" content="#d5dde7">
+  <meta property="og:title" content="ConectaServiços">
+  <meta property="og:description" content="Conectando você aos melhores profissionais perto de você.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgeG1sbnM6YzJwYT0iaHR0cDovL2MycGEub3JnL21hbmlmZXN0Ij48bWV0YWRhdGE+PGMycGE6bWFuaWZlc3Q+QUFBV2dtcDFiV0lBQUFBZWFuVnRaR015Y0dFQUVRQVFnQUFBcWdBNG0zRURZekp3WVFBQUFCWmNhblZ0WWdBQUFFZHFkVzFrWXpKdFlRQVJBQkNBQUFDcUFEaWJjUU4xY200Nll6SndZVHBtTXpWbFkyTmtPQzAzT0RZeUxUUmtZV0l0T0RJNE1DMWtaVFk1TURKalpqY3pPVEFBQUFBRGwycDFiV0lBQUFBcGFuVnRaR015WVhNQUVRQVFnQUFBcWdBNG0zRURZekp3WVM1aGMzTmxjblJwYjI1ekFBQUFBTHhxZFcxaUFBQUFSR3AxYldSalltOXlBQkVBRUlBQUFLb0FPSnR4RTJNeWNHRXVhVzVuY21Wa2FXVnVkQzUyTXdBQUFBQVlZekp6YUVJNCt6aWZTTUhYN0FOU3NJYWNxaWtBQUFCd1kySnZjcU5wWkdNNlptOXliV0YwYldsdFlXZGxMM04yWnl0NGJXeHFhVzV6ZEdGdVkyVkpSSGdzZUcxd09tbHBaRG94WWpsbU5tRmhNQzFsWldFeExUUXpaR1F0WVRJeU55MW1aamczTldJMlpUTmlOMkZzY21Wc1lYUnBiMjV6YUdsd2FIQmhjbVZ1ZEU5bUFBQUI0bXAxYldJQUFBQkJhblZ0WkdOaWIzSUFFUUFRZ0FBQXFnQTRtM0VUWXpKd1lTNWhZM1JwYjI1ekxuWXlBQUFBQUJoak1uTm8ya1RseXBtcXFsemNGckw1bVVXdE5RQUFBWmxqWW05eW9tZGhZM1JwYjI1emdxSm1ZV04wYVc5dWEyTXljR0V1YjNCbGJtVmthbkJoY21GdFpYUmxjbk9oYTJsdVozSmxaR2xsYm5SemdhSmpkWEpzZUMxelpXeG1JMnAxYldKbVBXTXljR0V1WVhOelpYSjBhVzl1Y3k5ak1uQmhMbWx1WjNKbFpHbGxiblF1ZGpOa2FHRnphRmdnQ29MdmtUZ1UrWDg1TFV4NHk2dGhNZzhJaWVVR0phcGZqVFlOSjVRZmFnQ2tabUZqZEdsdmJuZ2RZMjl0TG1GdWRHaHliM0JwWXk1amJHRjFaR1V1Y0hKdmRtbGtaV1JxY0dGeVlXMWxkR1Z5YzZGNEgyTnZiUzVoYm5Sb2NtOXdhV011YjNKcFoybHVMV052Ym1acFpHVnVZMlZuZFc1cmJtOTNibXRrWlhOamNtbHdkR2x2Ym5obVEyeGhkV1JsSUhCeWIzWnBaR1ZrSUhSb2FYTWdabWxzWlNCaGRDQjBhR1VnY21WeGRXVnpkQ0J2WmlCaElIVnpaWElnWVc1a0lHMWhlU0JvWVhabElHTnlaV0YwWldRZ2IzSWdiVzlrYVdacFpXUWdkR2hsSUdacGJHVWdZMjl1ZEdWdWRITXViWE52Wm5SM1lYSmxRV2RsYm5TaFpHNWhiV1ZtUTJ4aGRXUmxjbUZzYkVGamRHbHZibk5KYm1Oc2RXUmxaUFVBQUFESWFuVnRZZ0FBQUVCcWRXMWtZMkp2Y2dBUkFCQ0FBQUNxQURpYmNSTmpNbkJoTG1oaGMyZ3VaR0YwWVFBQUFBQVlZekp6YUEydWxLbkpjNHNFcWVFUVMzVHlPeVlBQUFDQVkySnZjcVZqWVd4blpuTm9ZVEkxTm1Od1lXUk5BQUFBQUFBQUFBQUFBQUFBQUdSb1lYTm9XQ0NwbDFPVDVXZzJRc21NVy9qWGtsNGFYN1hJdkZ5OGVHYlVxTUY1Sm16OWlXUnVZVzFsYm1wMWJXSm1JRzFoYm1sbVpYTjBhbVY0WTJ4MWMybHZibk9Cb21WemRHRnlkQmg3Wm14bGJtZDBhQmtlQkFBQUFqNXFkVzFpQUFBQUoycDFiV1JqTW1Oc0FCRUFFSUFBQUtvQU9KdHhBMk15Y0dFdVkyeGhhVzB1ZGpJQUFBQUNEMk5pYjNLbFkyRnNaMlp6YUdFeU5UWnBjMmxuYm1GMGRYSmxlRTF6Wld4bUkycDFiV0ptUFM5ak1uQmhMM1Z5Ympwak1uQmhPbVl6TldWalkyUTRMVGM0TmpJdE5HUmhZaTA0TWpnd0xXUmxOamt3TW1ObU56TTVNQzlqTW5CaExuTnBaMjVoZEhWeVpXcHBibk4wWVc1alpVbEVlQ3g0YlhBNmFXbGtPbUl5TWpZNFpUQTBMVFU0TXpFdE5EWTBZaTA0WXpnNUxURTFOakV5WW1Kak1Ea3lObkpqY21WaGRHVmtYMkZ6YzJWeWRHbHZibk9Eb21OMWNteDRMWE5sYkdZamFuVnRZbVk5WXpKd1lTNWhjM05sY25ScGIyNXpMMk15Y0dFdWFXNW5jbVZrYVdWdWRDNTJNMlJvWVhOb1dDQUtndStST0JUNWZ6a3RUSGpMcTJFeUR3aUo1UVlscWwrTk5nMG5sQjlxQUtKamRYSnNlQ3B6Wld4bUkycDFiV0ptUFdNeWNHRXVZWE56WlhKMGFXOXVjeTlqTW5CaExtRmpkR2x2Ym5NdWRqSmthR0Z6YUZnZ2c1RW53L0pvSjZlYkpDWjdOcEdzYXAzMnUzMmg5bkZRbkZWNGhvcXNxZzZpWTNWeWJIZ3BjMlZzWmlOcWRXMWlaajFqTW5CaExtRnpjMlZ5ZEdsdmJuTXZZekp3WVM1b1lYTm9MbVJoZEdGa2FHRnphRmdnbTl0WnE2Tk9JTjhxY2d1R2dOL1AyS2I4ZkU5Nkw5aTlodDhsM0k3NXpzRjBZMnhoYVcxZloyVnVaWEpoZEc5eVgybHVabStqWkc1aGJXVnZRVzUwYUhKdmNHbGpJRVpwYkdWelozWmxjbk5wYjI1bE1TNHdMakJyYzNCbFkxWmxjbk5wYjI1bE1pNDBMakFBQUJBNGFuVnRZZ0FBQUNocWRXMWtZekpqY3dBUkFCQ0FBQUNxQURpYmNRTmpNbkJoTG5OcFoyNWhkSFZ5WlFBQUFCQUlZMkp2Y3RLRVdRSVNvZ0VtR0NGWkFnb3dnZ0lHTUlJQmphQURBZ0VDQWhSQTVhQUs3c0k1MEw2NGcvb0dRZ1U5WjFVVEFEQUtCZ2dxaGtqT1BRUURBekJKTVJjd0ZRWURWUVFLRXc1QmJuUm9jbTl3YVdNc0lGQkNRekV1TUN3R0ExVUVBeE1sUVc1MGFISnZjR2xqSUVOdmJuUmxiblFnUTNKbFpHVnVkR2xoYkhNZ1VtOXZkQ0JEUVRBZUZ3MHlOakE0TURjeE9EUXpOVFphRncweU9EQTRNRFl4T1RRek5UWmFNRVF4RnpBVkJnTlZCQW9URGtGdWRHaHliM0JwWXl3Z1VFSkRNU2t3SndZRFZRUURFeUJCYm5Sb2NtOXdhV01nUTJ4aGRXUmxJRU52Ym5SbGJuUWdVMmxuYm1sdVp6QlpNQk1HQnlxR1NNNDlBZ0VHQ0NxR1NNNDlBd0VIQTBJQUJKaDZDbXZMVUJnRkZOVTB2VUtsT1Z0RTZkamQxN0w1U3V3WDBMZW1GaXNCTTNka2QvM2N5anhGQTNRbzVTNDZmWDAvaWhZMFZaN21mYjlLRjcwM3Q1T2pXREJXTUE0R0ExVWREd0VCL3dRRUF3SUhnREFWQmdOVkhTVUVEakFNQmdvckJnRUVBWVBvWGdJQk1Bd0dBMVVkRXdFQi93UUNNQUF3SHdZRFZSMGpCQmd3Rm9BVXpsSGlCSUZPWkZzaitPUEV6NW8rbk1IWFhNSXdDZ1lJS29aSXpqMEVBd01EWndBd1pBSXdNWE1kRko0QmV0TExWWTdPUnVFOW5vcWJiQVpPWm4vYUFyWHlUd0ZBWmZLclB6eEYydlBvSk5mMStVQ2RnMVhHQWpCd1gxemQ5V0dxWWtxbUw1U0ZxdzFReVNqcjF6SmZwSk05KzFyZER3U1BMTU9QT2pLdWlYam9VL3BVVWVHOVJ3bWhZM0JoWkZrTm5nQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUFpZUUxZR09nTU1IQjhiQmJJRkJBLzdpZEVyTUF2S3ZhcTBaNisxTnpLeUZGcWg3Z29EaEl4MzVqclhQVjdsOGlhRzBBMHRSL0tuMllJRlJFcC9oTm5vZU84PTwvYzJwYTptYW5pZmVzdD48L21ldGFkYXRhPgogIDxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE2IiBmaWxsPSIjMmY2ZmQ2Ii8+CiAgPGNpcmNsZSBjeD0iMjEiIGN5PSIzMiIgcj0iMTIiIGZpbGw9IiNmZmYiLz4KICA8Y2lyY2xlIGN4PSI0MyIgY3k9IjMyIiByPSIxMiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIuNTUiLz4KICA8cmVjdCB4PSIyMSIgeT0iMjgiIHdpZHRoPSIyMiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K" type="image/svg+xml">
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFYElEQVR4nL2XT2xc1RXGf+fc92c8Y+zEMcREVQqIdNEAAaIEIZUCaumCBahULqzYIJAqFaIuCpuuqYRaVQEEQtBVV00EEgplASwaFbWkSVVIwBUBAQGSGieOPY1nPPPeu/d08d5M7HiMQTEc6Ukz78/9vnPOd797rwCACYgBXLfnvZtEk4ew8CMsXA6WcFEhGaL/Rd0b5rvPH927/dBSTOn9+P7ku0m8JfqduOghcXFqRRcLHrCLw0cQdUiUYj7vWgjP5SezX0/tvyYDE5mc3Of+PXF9VHfhQFwfu6NoncEwL6AgcpHoVZgZBEFc1Bgnb519rR30rhum3y4E4Lo97z2VNC77Zb4wkyFykSVfk0sWD1+W5AszT73z5PZHZMev3t+N8Q8IhpkC65T16hQQCaBCkd+s5otHNK6pWeBbAAcQs4DGNTWnD6uI3GpFl7Ln304IaIV5q5oxUar9ywW3XnLsjWbBY8blKkK02lRTAaeCAYU3jPK/DiAjQv9+sPPfr07cECFatexOhVY3MN8qUIHRukMF5lsFrW7ALWEhAllhLGaGCAwlgggsZkZW2JdWL1ot82a7YPe2Bvf+YCPXXjHEaN3RbHuOfbLIn9+c458ftBgZchjQyYytl8bceFWdiY0xaSx0c2N6LudfH7X57HROLRFsQKFlx56pZbdVhf+1Cx78yTiP/nRiIHszeOKlaV54Y5Y0EnZta3DH9cNETim8EcxQESIVch94/Z1zHDrephavJLGsAk6FZttz9+4NPHbPBMGMEEBEEEqlmBkiwmM/m+Dz2ZzjpzrcuXOEVjfQyTyRKxl7MzIzVOHOnaMsLAamPu1QS6SvEVgy9QTIvbFp2PHoPRMlU5O+6Hoi6/XeDH7z8wnuu2UMgFos1FPFB8Osel/L9/LCuP3aYeo1xYdVKqAqnGt7brtmhM0bIoKVAwyKnv42b4i5//Yx8qKsChhfzBf8bWqBIhhCSST3xqZLIraOx/znZHdZK5ZB+GBcuTnFrFo+1gizsiK1REljIY2VrZcmbNuSkuW2bLqqCGOXRFhFbEULlrZiveLCFAaNvUKEH890kd5WYY0QKat2YQs+ONUluUDxwYzZBY9UxraCQAhGPVXeer/F6WbB+EilgwE8gpXZnDlX8JcjTRqV+AAWs4CK9KevGcQOzi54TsxkJG45sX4LDIidMHvO8/uXvyirAH1V9y6/RFy/3T/NvjfnEKCbG+3KIUXKd0M1G+JIOfjuQvV8eTIrRDgy5Hjx7/M8vn+aYNYfsHc5FYIZj++f5pUjTT49nXHgcJPIwfCQ60/byAlDiaIKrxxucuzE4goPgAFOCD0r9uy8usH9t42x48ohGjVHu+N5++NF/vTXsxz5sMVo/bwVf2dTzK5tdbaMxcSRkBfGqbmcw8fbfD77Nay4F06FVsdTBNjYcNQSpZMF5lqeSKFRc/2+a7UY+QD1VIicUHij3S2dMI1WZt6LgYtRrx31VBERssLo5AUqUmZt1geHstdxJCRA4UvjEcpV0WBVcIDIIBckHrQnCKX5o1I6JZUIB4VZOYJUW6u1gEEwLFdgWtRVQwwOWwLwVeKreKioA7NpBQ5KlGIQ1vxuncIgSJSCyEEFezoUHRPR6tk3jy+ihHzRwJ7Wo3u3HzJfPBPXxx1m+TcPb3lcH3cW/DNH924/JJOT+9xMfVc8v6FzIGps+nHROmOGBTG0Mvj1ADWTJUez9tnXm6PpXbunDuf9w+nVD7+aNtxVT6DuF+qS2HyG+YJ1OZy6CHEJwWc5wT+bnyzOH04riv3j+Q17pm4OLn6AEH6Ihe+u0/H8BOIOBsIfj/3he28txfw/yz+uwz1O1aAAAAAASUVORK5CYII=" type="image/png" sizes="32x32">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container topo__linha">
+      <a href="#inicio" class="logo" aria-label="ConectaServiços, início">
+        <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+          <circle cx="8" cy="14" r="5" fill="#2f6fd6"/>
+          <circle cx="20" cy="14" r="5" fill="#2f6fd6" fill-opacity=".45"/>
+          <rect x="8" y="12.5" width="12" height="3" rx="1.5" fill="#2f6fd6"/>
+        </svg>
+        <span>ConectaServiços</span>
+      </a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#para-quem">Para quem</a></li>
+        </ul>
+      </nav>
+      <a href="#cadastro" class="btn btn--pequeno">Quero ser avisado</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <h1>Eletricista, encanador ou técnico de confiança, perto de você.</h1>
+          <p class="hero__sub">O ConectaServiços reúne profissionais verificados da sua região. Você compara avaliações reais, vê o preço estimado e agenda sem depender de indicação.</p>
+
+          <form class="lead" id="form-hero" novalidate>
+            <label for="email-hero" class="lead__rotulo">Seu melhor e-mail</label>
+            <div class="lead__campo">
+              <input type="email" id="email-hero" name="email" placeholder="voce@email.com" autocomplete="email" required>
+              <button type="submit" class="btn">Quero ser avisado</button>
+            </div>
+            <p class="lead__erro" role="alert" hidden></p>
+            <p class="lead__ok" role="status" hidden></p>
+            <p class="lead__nota">Usamos seu e-mail só para avisar do lançamento. Sem spam.</p>
+          </form>
+        </div>
+
+        <!-- Demonstração interativa -->
+        <div class="demo" aria-labelledby="demo-titulo">
+          <div class="demo__topo">
+            <p class="demo__titulo" id="demo-titulo">Que serviço você precisa?</p>
+            <p class="demo__aviso">Exemplo ilustrativo</p>
+          </div>
+          <div class="chips" role="group" aria-label="Tipo de serviço">
+            <button type="button" class="chip" aria-pressed="true" data-servico="eletricista">Eletricista</button>
+            <button type="button" class="chip" aria-pressed="false" data-servico="encanador">Encanador</button>
+            <button type="button" class="chip" aria-pressed="false" data-servico="tecnico">Técnico</button>
+          </div>
+          <ul class="pros" id="lista-pros" aria-live="polite"></ul>
+          <p class="demo__rodape">Profissionais verificados, ordenados por distância.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA -->
+    <section class="secao" id="problema">
+      <div class="container duas-col">
+        <div>
+          <h2>Achar um bom profissional não deveria ser uma aposta.</h2>
+          <p class="lead-texto">Muita gente passa horas procurando alguém para resolver um problema simples em casa: uma tomada que parou, um vazamento, um aparelho que não liga.</p>
+        </div>
+        <ul class="dores">
+          <li><strong>Falta de confiança.</strong> Você deixa um desconhecido entrar na sua casa sem saber quem ele é.</li>
+          <li><strong>Risco de golpes.</strong> Orçamentos que mudam no meio do serviço e cobranças inesperadas.</li>
+          <li><strong>Demora.</strong> Mensagens para vários contatos até alguém responder.</li>
+          <li><strong>Dependência de indicação.</strong> Se ninguém conhece ninguém, você fica sem opção.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SOLUÇÃO / COMO FUNCIONA -->
+    <section class="secao secao--vidro" id="como-funciona">
+      <div class="container">
+        <div class="cab">
+          <h2>Uma plataforma que conecta você a quem resolve.</h2>
+          <p class="lead-texto">Busca rápida, profissionais verificados, avaliações reais e agendamento fácil. Do toque no app ao serviço marcado em cinco passos.</p>
+        </div>
+        <ol class="passos">
+          <li><span class="passos__n">1</span><h3>Entra no app</h3><p>Abre o ConectaServiços e informa onde você está.</p></li>
+          <li><span class="passos__n">2</span><h3>Escolhe o serviço</h3><p>Eletricista, encanador, técnico: é só selecionar.</p></li>
+          <li><span class="passos__n">3</span><h3>Vê quem está perto</h3><p>Lista de profissionais próximos, já verificados.</p></li>
+          <li><span class="passos__n">4</span><h3>Compara avaliações</h3><p>Notas e comentários de clientes de verdade.</p></li>
+          <li><span class="passos__n">5</span><h3>Agenda</h3><p>Escolhe o horário e confirma pelo app.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="secao" id="diferenciais">
+      <div class="container">
+        <div class="cab">
+          <h2>O que muda quando você usa o ConectaServiços.</h2>
+        </div>
+        <div class="dif">
+          <article class="dif__item dif__item--destaque">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>
+            <h3>Sistema de avaliação</h3>
+            <p>Só avalia quem contratou. Você escolhe com base na experiência de quem já usou.</p>
+          </article>
+          <article class="dif__item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5zm-1.2 13.2l5.6-5.6-1.4-1.4-4.2 4.2-1.9-1.9-1.4 1.4z"/></svg>
+            <h3>Profissionais verificados</h3>
+            <p>Cadastro conferido antes de aparecer na busca.</p>
+          </article>
+          <article class="dif__item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a1 1 0 011 1v11a1 1 0 01-1 1H8l-4 4V5a1 1 0 011-1z"/></svg>
+            <h3>Chat direto com o prestador</h3>
+            <p>Tire dúvidas e explique o problema antes de agendar.</p>
+          </article>
+          <article class="dif__item dif__item--destaque">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15.5V19h-2v-1.5c-1.5-.3-2.6-1.1-2.9-2.6l1.9-.5c.2.8.8 1.3 1.9 1.3 1 0 1.6-.4 1.6-1.1 0-.7-.5-1-2-1.4-1.8-.5-3.1-1.2-3.1-2.9 0-1.3 1-2.2 2.6-2.5V6h2v1.4c1.3.3 2.2 1.1 2.5 2.4l-1.9.5c-.2-.7-.7-1.1-1.7-1.1-.9 0-1.4.4-1.4 1 0 .6.5.9 1.9 1.3 1.9.5 3.2 1.2 3.2 3 0 1.4-1.1 2.3-2.6 2.6z"/></svg>
+            <h3>Preço estimado antes do serviço</h3>
+            <p>Você sabe a faixa de valor antes de confirmar. Sem susto no final.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PÚBLICO -->
+    <section class="secao secao--vidro" id="para-quem">
+      <div class="container">
+        <div class="cab">
+          <h2>Feito para quem precisa resolver rápido.</h2>
+        </div>
+        <div class="publico">
+          <article>
+            <h3>Quem mora sozinho</h3>
+            <p>Sem ninguém para pedir indicação, você encontra alguém confiável em poucos toques.</p>
+          </article>
+          <article>
+            <h3>Famílias</h3>
+            <p>Mais segurança para quem entra em casa, com avaliações de outras famílias.</p>
+          </article>
+          <article>
+            <h3>Pequenos comércios</h3>
+            <p>Loja parada perde dinheiro. Agende o reparo com preço estimado e horário combinado.</p>
+          </article>
+        </div>
+
+        <div class="pro">
+          <div>
+            <h3>Você é profissional?</h3>
+            <p>Receba clientes da sua região, construa reputação com avaliações reais e ganhe destaque no app. Cadastre seu e-mail e entre na lista de lançamento.</p>
+          </div>
+          <a href="#cadastro" class="btn btn--claro">Quero me cadastrar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="secao final" id="cadastro">
+      <div class="container final__caixa">
+        <h2>Seja o primeiro a usar.</h2>
+        <p class="lead-texto">Deixe seu e-mail e avisamos assim que o ConectaServiços estiver disponível na sua região.</p>
+
+        <form class="lead lead--centro" id="form-final" novalidate>
+          <label for="email-final" class="lead__rotulo">Seu melhor e-mail</label>
+          <div class="lead__campo">
+            <input type="email" id="email-final" name="email" placeholder="voce@email.com" autocomplete="email" required>
+            <button type="submit" class="btn">Quero ser avisado</button>
+          </div>
+          <fieldset class="perfil">
+            <legend>Eu sou</legend>
+            <label><input type="radio" name="perfil" value="cliente" checked> Cliente</label>
+            <label><input type="radio" name="perfil" value="profissional"> Profissional</label>
+          </fieldset>
+          <p class="lead__erro" role="alert" hidden></p>
+          <p class="lead__ok" role="status" hidden></p>
+          <p class="lead__nota">Usamos seu e-mail só para avisar do lançamento. Sem spam.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__linha">
+      <p class="rodape__marca">ConectaServiços.</p>
+      <p>Conectando você aos melhores profissionais perto de você.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
